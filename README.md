@@ -1,10 +1,5 @@
 # covid19_tracker_app
 
-Here's a README file for your COVID-19 Tracker app:
-
----
-
-# COVID-19 Tracker App
 
 A Flutter-based COVID-19 Tracker app that fetches real-time COVID-19 data from the [disease.sh API](https://disease.sh/v3/covid-19/). This app displays global COVID-19 statistics, country-specific data, and more, with an intuitive user interface.
 
