@@ -1,5 +1,6 @@
 import 'package:covid19_tracker_app/Model/WorldStatesModel.dart';
 import 'package:covid19_tracker_app/Services/states_services.dart';
+import 'package:covid19_tracker_app/view/countries_list.dart';
 import 'package:flutter/material.dart';
 import 'package:pie_chart/pie_chart.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -97,13 +98,16 @@ class _WorldStatesScreenState extends State<WorldStatesScreen>
                             ),
                           ),
                         ),
-                        Container(
-                          height: 50,
-                          decoration: BoxDecoration(
-                              color: const Color(0xff1aa260),
-                              borderRadius: BorderRadius.circular(10)),
-                          child: const Center(
-                            child: Text('Track Countries'),
+                        InkWell(
+                          onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> CountriesListScreen()));},
+                          child: Container(
+                            height: 50,
+                            decoration: BoxDecoration(
+                                color: const Color(0xff1aa260),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: const Center(
+                              child: Text('Track Countries'),
+                            ),
                           ),
                         )
                       ],
